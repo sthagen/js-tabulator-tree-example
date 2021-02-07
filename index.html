@@ -36,6 +36,11 @@
         .tabulator-col-title {
             color: #bdbdbd
         }
+
+        /*Horizontally center header and footer*/
+        .tabulator-print-header, tabulator-print-footer{
+            text-align:center;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +51,7 @@
         <button id="download-xlsx">Download XLSX</button>
         <button id="download-pdf">Download PDF</button>
         <button id="download-html">Download HTML</button>
+        | <button id="print-table">Print Table</button>
     </div>
     <p>data-version = <span id="data-version">analyzing ...</span></p>
     <div id="tree-example-table" class="table-sm thead-dark"></div>
@@ -58,6 +64,9 @@
         dataTree:true,
         dataTreeChildField:"_children",
         layout: "fitDataStretch",
+        printAsHtml:true,
+        printHeader:"<h1>Example Report Header<h1>",
+        printFooter:"<h2>Example Report Footer<h2>",
         ajaxResponse: function (url, params, response) {
             data_version = response.data_version
             document.getElementById("data-version").innerText = data_version
@@ -113,6 +122,12 @@
     //trigger download of data.html file
     document.getElementById("download-html").addEventListener("click", function(){
         table.download("html", "data.html", {style:true});
+    });
+
+
+    //print button
+    document.getElementById("print-table").addEventListener("click", function(){
+        table.print(false, true);
     });
 </script>
 </body>
