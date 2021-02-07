@@ -7,15 +7,15 @@
       "key": "KEY-1234",
       "parent_key": "PARENT_KEY",
       "poc": 0.3,
-      "plan": 42,
-      "burn": 13,
-      "est": 100,
+      "plan": 6,
+      "burn": 4,
+      "est": 5,
       "due": "2021-12-31",
       "modify": "2021-02-04",
       "_children": [
         {
           "id": 2,
-          "name": "NAME_SUB_2",
+          "name": "NAME_SUB_1",
           "key": "KEY-1235",
           "parent_key": "KEY-1234",
           "poc": 0.3,
@@ -25,7 +25,7 @@
           "due": "2021-05-22",
           "modify": "2021-02-04",
           "_children": [],
-          "summary": "SUMMARY",
+          "summary": "SUMMARY 1",
           "data_version": "2021-02-07 12:34:56"
         },
         {
@@ -40,11 +40,57 @@
           "due": "2021-03-22",
           "modify": "2021-02-03",
           "_children": [],
-          "summary": "SUMMARY",
+          "summary": "SUMMARY 2",
           "data_version": "2021-02-07 12:34:56"
         }
       ],
-      "summary": "SUMMARY",
+      "summary": "SUMMARY ZERO",
+      "data_version": "2021-02-07 12:34:56"
+    },
+    {
+      "id": 4,
+      "name": "NAME",
+      "key": "KEY-12",
+      "parent_key": "PARENT_KEY",
+      "poc": 0.13333333,
+      "plan": 15,
+      "burn": 4,
+      "est": 6,
+      "due": "2021-12-31",
+      "modify": "2021-02-04",
+      "_children": [
+        {
+          "id": 5,
+          "name": "NAME_SUB_5",
+          "key": "KEY-13",
+          "parent_key": "KEY-12",
+          "poc": 0,
+          "plan": 13,
+          "burn": 1,
+          "est": 5,
+          "due": "2021-05-22",
+          "modify": "2021-02-04",
+          "_children": [],
+          "summary": "SUMMARY 5",
+          "data_version": "2021-02-07 12:34:56"
+        },
+        {
+          "id": 6,
+          "name": "NAME_SUB_6",
+          "key": "KEY-14",
+          "parent_key": "KEY-12",
+          "poc": 1,
+          "plan": 2,
+          "burn": 3,
+          "est": 1,
+          "due": "2021-03-22",
+          "modify": "2021-02-03",
+          "_children": [],
+          "summary": "SUMMARY 6",
+          "data_version": "2021-02-07 12:34:56"
+        }
+      ],
+      "summary": "SUMMARY FOUR",
       "data_version": "2021-02-07 12:34:56"
     }
   ],
