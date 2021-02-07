@@ -63,13 +63,16 @@
             {title:"Key", field:"key", width:75},
             {title:"Parent", field:"parent_key", width:75, responsive:2}, //hide this column first
             {title:"Progress", field:"poc", width:75},
-            {title:"Plan", field:"plan", hozAlign:"center", sorter:"date", width:75},
-            {title:"Burn", field:"burn", hozAlign:"center", sorter:"date", width:75},
-            {title:"Hard", field:"est", hozAlign:"center", sorter:"date", width:75},
+            {title:"Plan", field:"plan", hozAlign: "right", width:75, formatter: "money",
+                formatterParams: {decimal: ".", thousand: "", symbol: "", precision: 2}},
+            {title:"Burn", field:"burn", hozAlign:"right", width:75, formatter: "money",
+                formatterParams: {decimal: ".", thousand: "", symbol: "", precision: 2}},
+            {title:"Hard", field:"est", hozAlign:"right", width:75, formatter: "money",
+                formatterParams: {decimal: ".", thousand: "", symbol: "", precision: 0}},
             {title:"Due", field:"due", hozAlign:"center", sorter:"date", width:95},
             {title:"Modify", field:"modify", hozAlign:"center", sorter:"date", width:95},
             {title:"Version", field:"data_version", hozAlign:"center", sorter:"date", width:150},
-            {title:"Summary", field:"summary", hozAlign:"left", sorter:"date"},
+            {title:"Summary", field:"summary", hozAlign:"left"},
         ],
     });
 </script>
