@@ -61,8 +61,9 @@
         columns: [
             {title:"Name", field:"name", width:200, responsive:0}, //never hide this column
             {title:"Key", field:"key", width:75},
-            {title:"Parent", field:"parent_key", width:75, responsive:2}, //hide this column first
-            {title:"Progress", field:"poc", width:75},
+            {title:"Parent", field:"parent_key", width:125, responsive:2}, //hide this column first
+            {title:"Progress", field:"poc", width:75, formatter: "progress",
+                formatterParams: {min: 0, max: 1, color: ["darkgray"], legendColor: "#000000", legendAlign: "center"}},
             {title:"Plan", field:"plan", hozAlign: "right", width:75, formatter: "money",
                 formatterParams: {decimal: ".", thousand: "", symbol: "", precision: 2}},
             {title:"Burn", field:"burn", hozAlign:"right", width:75, formatter: "money",
