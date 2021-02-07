@@ -1,6 +1,52 @@
 {
   "last_page": 1,
   "data": [
+    {
+      "id": 1,
+      "name": "NAME",
+      "key": "KEY-1234",
+      "parent_key": "PARENT_KEY",
+      "poc": 0.3,
+      "plan": 42,
+      "burn": 13,
+      "est": 100,
+      "due": "2021-12-31",
+      "modify": "2021-02-04",
+      "_children": [
+        {
+          "id": 2,
+          "name": "NAME_SUB_2",
+          "key": "KEY-1235",
+          "parent_key": "KEY-1234",
+          "poc": 0.3,
+          "plan": 2,
+          "burn": 1,
+          "est": 2,
+          "due": "2021-05-22",
+          "modify": "2021-02-04",
+          "_children": [],
+          "summary": "SUMMARY",
+          "data_version": "2021-02-07 12:34:56"
+        },
+        {
+          "id": 3,
+          "name": "NAME_SUB_2",
+          "key": "KEY-1236",
+          "parent_key": "KEY-1234",
+          "poc": 0.7,
+          "plan": 4,
+          "burn": 3,
+          "est": 3,
+          "due": "2021-03-22",
+          "modify": "2021-02-03",
+          "_children": [],
+          "summary": "SUMMARY",
+          "data_version": "2021-02-07 12:34:56"
+        }
+      ],
+      "summary": "SUMMARY",
+      "data_version": "2021-02-07 12:34:56"
+    }
   ],
-  "data_version": "2021-02-07T12:34:55Z"
+  "data_version": "2021-02-07 12:34:55"
 }
